@@ -57,13 +57,11 @@ Global
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.AppStore|iPhoneSimulator.ActiveCfg = ServerConfig|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.AppStore|iPhoneSimulator.Build.0 = ServerConfig|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Release|iPhone.Build.0 = Release|Any CPU
 		{4F365CD0-F703-4972-92C5-DFE9AAD409FD}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
@@ -93,7 +91,6 @@ Global
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.AppStore|iPhoneSimulator.Build.0 = ServerConfig|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.AppStore|iPhoneSimulator.Deploy.0 = ServerConfig|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Debug|iPhone.Build.0 = Debug|Any CPU
@@ -102,8 +99,6 @@ Global
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Release|iPhone.Build.0 = Release|Any CPU
 		{BDE0CADB-AA9A-494B-B42F-B1AE0F7AD897}.Release|iPhone.Deploy.0 = Release|Any CPU
@@ -217,13 +212,11 @@ Global
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DD18034-334F-4350-9CB7-C90009EAB963}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DD18034-334F-4350-9CB7-C90009EAB963}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Release|iPhone.Build.0 = Release|Any CPU
 		{1DD18034-334F-4350-9CB7-C90009EAB963}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
@@ -338,16 +331,5 @@ Global
 		{A06EAE67-7D5E-4F2D-A654-64286F5BA4A4} = {2EB38538-40CB-4E17-8FD7-C23F563A5C25}
 		{F2BE275D-096A-43FF-AE70-14F1BD814922} = {2EB38538-40CB-4E17-8FD7-C23F563A5C25}
 		{1533D02C-BC00-491B-BEE3-23D7BB8235B0} = {2EB38538-40CB-4E17-8FD7-C23F563A5C25}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 1
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://cristhyanc.visualstudio.com/
-		SccProjectUniqueName0 = Server\\MyGarageSale.Web\\MyGarageSale.Web.csproj
-		SccProjectTopLevelParentUniqueName0 = MyGarageSale.sln
-		SccProjectName0 = Server/MyGarageSale.Web
-		SccAuxPath0 = https://cristhyanc.visualstudio.com
-		SccLocalPath0 = Server\\MyGarageSale.Web
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 	EndGlobalSection
 EndGlobal

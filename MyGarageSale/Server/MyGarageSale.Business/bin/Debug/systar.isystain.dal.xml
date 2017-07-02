@@ -1,0 +1,1117 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+systar.isystain.dal
+</name>
+</assembly>
+<members>
+<member name="M:systar.isystain.dal.Accounts.Account.IsUnique(System.Object)">
+ <summary>
+ Routine to determine if a supplied company ID is already used
+ </summary>
+ <param name="CompanyId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Accounts.Account.Provision(System.String,System.String,systar.isystain.shared.DbTools)">
+ <summary>
+ This method is responsible for provisioning a cutomer in an existing iSystain instance
+ </summary>
+ <param name="CompanyId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Accounts.Account.ActiveSolutions.Load(System.String)">
+ <summary>
+ This method tries to determine which iSystain solutions are active for a given company
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Solutions">
+ <summary>
+ For the time being, this class will not be based on a db structure. The available iSystain solutions will be hard coded until we
+ better define the sales model for selling solutions
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Assure.Audits.Import(System.Data.DataSet,System.String)">
+ <summary>
+ Method to import assure audit data from XML text files
+ </summary>
+ <param name="ds"></param>
+ <returns> True if import is successful, false if the current audit is committed and throws if any other error occurs</returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Assure.Audits.Audit._Prepare(System.Guid,systar.isystain.shared.DbTools)">
+ <summary>
+ method used to generate an audit based on a template
+ </summary>
+ <param name="TemplateID"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Assure.Audits.Audit.Save(systar.isystain.shared.Entities,System.String)">
+ <summary>
+ Method used exclusively for adding new audits
+ </summary>
+ <param name="Entities"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Assure.Instruments.Instrument.Sections.Section">
+ <summary>
+ The Section class is a CRUD class to manage a single section within an instrument
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Assure.Instruments.Instrument.Sections.Section.Requirements.Requirement">
+ <summary>
+ The Section class is a CRUD class to manage a single section within an instrument
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Assure.ScoringModels.ScoringModel">
+ <summary>
+ Scoring Model: Base class to manage a single scoring model used by instruments
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.BI.BiKpiGroupRepository">
+ <summary>
+ CRUD and ORM mapping functions for BiKpi groups
+ </summary>
+</member>
+<member name="M:systar.isystain.dal.BI.BiKpiGroupRepository.ORM(System.Data.DataRow)">
+ <summary>
+ Object Relational Mapper for BiKPI groups
+ </summary>
+ <param name="r"></param>
+ <returns></returns>
+</member>
+<member name="M:systar.isystain.dal.BI.BiKpiGroupRepository.LoadAll(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to load all BiKpi groups for a specified company
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:systar.isystain.dal.BI.BiKpiGroupRepository.Load(System.Guid,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to load a specific BiKpi group for a specified company
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:systar.isystain.dal.BI.BIKpiSets">
+ <summary>
+ The Business Intelligence KPI Sets class structure is used to maintain a hierarchical folder system for
+ BI Kpis. This enables the user to define logical groupings of BI KPIs, which in turn make it easier for users 
+ to locate BI KPIs 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BIKpiSets.Load">
+ <summary>
+ Function to load all persisted bi kpisets from the database
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BIKpiSets.Load(System.Guid)">
+ <summary>
+ Method to load all child BiKpiSets for a specific KpiSet
+ </summary>
+ <param name="ParentID"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BIKpiSets.BIKpiSet.Load(System.Guid)">
+ <summary>
+ Method to load a single instance of a BiKPISet object from the persistance layer
+ </summary>
+ <param name="BiKpiSetID"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.BI.BiKpis">
+ <summary>
+ Class to manage a collection of Bi Kpis. This can either be all kpis stored or all related to a specific BI Kpiset
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BIKpi.Save(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to persist a BiKpi object to the database
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BIKpi.BiKpiInstructionGroup.Save(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to persist a BiKpi Instruction group to the DAL
+ This is a subclass of BiKpi and is implemented so that
+ all groups are cleared before calling the DAL Crud routines
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.BI.BIKpi.BIKpiItem">
+ <summary>
+ Class to store raw kpi data retrieved from the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BiChart.Load(System.Guid,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Basic CRUD method to load an instance of a BI Chart from the DB
+ </summary>
+ <param name="ChartId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BiChart.ChartEntities.ClearAndSave(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This method is used when the list of entities is replaced with new ones
+ It should not be called from the main chart save method.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.BI.BiChart.ChartEntity">
+ <summary>
+ Class to manage the association of an entity to a chart 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BiChart.ChartEntity.LoadFromRow(System.Data.DataRow)">
+ <summary>
+ Method to manage loading all dal properties from the dataset
+ </summary>
+ <param name="r"></param>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BiChart.ChartEntity.Save(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to persist this dal object to the database. 
+ </summary>
+ <param name="db"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BiChart.Series.Save(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to persist a chart series to the DB. This routine is called from the chart routine
+ so that it executes in a managed transaction
+ </summary>
+ <param name="db"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.BiChart.Series.Delete(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to remove a series from a BI chart
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.BI.ChartCache">
+ <summary>
+ This class manages caching a chart to the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.BI.Visualisers">
+ <summary>
+ Collection class to manage a list of BI Visualisers 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.Visualisers.Load(System.String,System.Guid)">
+ <summary>
+ Method to load all visualisers that belong to a specific user and optionally
+ belong to a specific focus area
+ </summary>
+ <param name="OwnerId"></param>
+ <param name="FocusAreaId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.Visualisers.Visualiser.Load(System.Guid)">
+ <summary>
+ Method to load a single visualiser from the database
+ </summary>
+ <param name="VisualiserId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.BI.Visualisers.Visualiser.LoadFromRow(System.Data.DataRow)">
+ <summary>
+ Method to initialise a dal object's properties from a dataset row
+ </summary>
+ <param name="r"></param>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.ChangeManagement.ChangeQuestionnaireSetupRepository">
+ <summary>
+ This is a DAL repository class to manage the CRUD for Change Management Assessment Setup
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.ChangeManagement.ChangeQuestionnaireSetupRepository.LoadALL(systar.isystain.shared.Enumerators.isystainFunctionIdentifier,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to load all assessment setup records for a given change request stage
+ </summary>
+ <param name="Stage"></param>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.Dashboards.DashboardRepository.ExecuteAsset(systar.isystain.shared.BaseTypes.Common.Dashboards.BaseDashboardAsset,systar.isystain.shared.BaseTypes.Common.BaseEntity,System.DateTime,System.DateTime,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This is a temporary routine to execute the statement stored within a dashboard asset object
+ </summary>
+ <param name="o"></param>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Common.Workflow.BusinessProcessTemplateRepository">
+ <summary>
+ Class to manage business process template persistance and CRUD
+ Business Process templates are a workflow construct used to set milestones and generate notifications
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.Workflow.BusinessProcessTemplateRepository.LoadAllCompanies(System.Boolean)">
+ <summary>
+ This is only used by the iSystainMS service. it DOES NOT FILTER by Company ID
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Common.Workflow.BusinessProcessTemplateMilestoneRepository">
+ <summary>
+ Business Process Template Milestone Repository Class (CRUD class for workflow milestones)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Common.Workflow.BusinessProcessMapRepository">
+ <summary>
+ Class to persist mapping records between logical isystain function and a user's business process milestones
+ 
+ Note: This class always inherits the db context from the caller as it will always be controlled by the
+ transaction bounds of the calling object's unit of work
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.ActionRepository.LoadEventBPAction(System.String,System.Guid,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ DS Kim DEV7 - Event Days off work action plan
+ </summary>
+ <param name="EventId"></param>
+ <param name="BPTemplateId"></param>
+ <param name="uow"></param>
+ <returns></returns>
+</member>
+<member name="M:systar.isystain.dal.Common.ActionRepository.MarkNotified(systar.isystain.shared.BaseTypes.Common.BaseAction,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ DS Lola DEV1 - This method was added to address an issue where fetched actions processed by the message service were resetting the action status
+                Here we only update the values necessary for dealing with email notification sending
+ </summary>
+ <param name="o"></param>
+ <param name="uow"></param>
+ <returns></returns>
+</member>
+<member name="M:systar.isystain.dal.Common.CodeGroupRepository.LoadAllExtendedAttributeGroups(systar.isystain.shared.Common.UnitOfWork,System.Guid)">
+ <summary>
+ DS Glenis - Added this method to load all code groups used in activity extended attributes
+ </summary>
+ <param name="uow"></param>
+ <param name="FocusAreaId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.CodeGroupRepository.LoadAll(System.Collections.Generic.List{System.Guid},systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This method takes a list of codes and finds all related code groups. Each code group is then loaded and only the codes
+ in the original list are added to the appropriate code group's code list
+ This is useful when building sql to find all objects that have at least 1 code in each of the matching code groups
+ </summary>
+ <param name="Codes"></param>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Common.CodeRepository">
+ <summary>
+ Repository to manage Code Group codes
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.CodeRepository.Save(systar.isystain.shared.BaseTypes.Common.BaseCode,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Persist method for codes (Delete is not supported)
+ </summary>
+ <param name="o"></param>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.EntityRepository.Load(System.String,System.Int32)">
+
+ Find any entity (regardless of type) that matches the filter supplied
+</member>
+<member name="T:systar.isystain.dal.Common.MessageFrameworkRepository">
+ <summary>
+ Repository class to manage message templates and messages used in soapbox
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.MessageQueueRepository.ORM(System.Data.DataRow)">
+ <summary>
+ Simple Object Relational Mapper
+ </summary>
+ <param name="r">The data row to be mapped</param>
+ <returns>Returns Queued Email object</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.MessageQueueRepository.Load">
+ <summary>
+ Loads the list of all queued emails for the company
+ </summary>
+ <returns>List of QueuedEmail</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.MessageQueueRepository.Load(System.Guid,systar.isystain.shared.Enumerators.iSystainObjectType)">
+ <summary>
+ Loads the list of all queued emails for the company
+ </summary>
+ <returns>List of QueuedEmail</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.MessageQueueRepository.Load(System.Guid)">
+ <summary>
+ Loads the queued email for the specified email id.
+ </summary>
+ <param name="id">The id of the queued email.</param>
+ <returns></returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.MessageQueueRepository.ReSend(systar.isystain.shared.BaseTypes.Common.MessageQueueItem)">
+ <summary>
+ Updates the email queue record for re-sending
+ </summary>
+ <param name="o">The email queue object</param>
+ <returns>Returns iSystainReturnCode</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.PositionRepository.Load">
+ <summary>
+ Loads all the positions
+ </summary>
+ <returns>List of BasePostion</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.PositionRepository.Load(System.String,System.Int32,System.String)">
+ <summary>
+ DAL routine used by the PositionPicker User Control
+ </summary>
+ <param name="Filter"></param>
+ <param name="Count"></param>
+ <param name="PositionFilter"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.PositionRepository.ORM(System.Data.DataRow)">
+ <summary>
+ Simple Object Relational Mapper
+ </summary>
+ <param name="r">The data row to be mapped.</param>
+ <returns>BaseRole object</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.SelectedCodeRepository.LoadAll(System.Collections.Generic.List{System.Guid},System.String,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This 
+ </summary>
+ <param name="IdList"></param>
+ <param name="CodeGroup"></param>
+ <param name="_uow"></param>
+ <returns></returns>
+</member>
+<member name="M:systar.isystain.dal.Common.RoleRepository.Load(System.Boolean,systar.isystain.shared.Enumerators.RoleLoadType)">
+ <summary>
+ Loads all the roles
+ </summary>
+ <param name="allRoles">if set to <c>true</c> [all roles].</param>
+ <returns>List of BaseRole</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.RoleRepository.ORM(System.Data.DataRow)">
+ <summary>
+ Simple Object Relational Mapper
+ </summary>
+ <param name="r">The data row to be mapped.</param>
+ <returns>BaseRole object</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.SupplierRepository.TrainingCourseRepositoryFactory(System.String)">
+ Child repository factory routines
+</member>
+<member name="M:systar.isystain.dal.Common.SupplierRepository.Load">
+ <summary>
+ Loads all the BaseSuppliers
+ </summary>
+ <returns>List of BaseSupplier</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.SupplierRepository.ORM(System.Data.DataRow)">
+ <summary>
+ Simple Object Relational Mapper
+ </summary>
+ <param name="r">The data row to be mapped</param>
+ <returns>BaseSupplier object</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Common.DocumentManagement.DocumentFolderRepository.Load(systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to return a collection of folders
+ </summary>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.DocumentManagement.DocumentFolderRepository.Load(System.Guid,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method load a specific folder
+ </summary>
+ <param name="FolderId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.DocumentManagement.DocumentRepository.Load(System.String,systar.isystain.shared.Enumerators.iSystainObjectType,systar.isystain.shared.Common.UnitOfWork,System.Boolean,System.Boolean)">
+ <summary>
+ This routine is used to retrieve a list of documents relative to an object in isystain such as an event, transaction, observation, etc.
+ </summary>
+ <param name="InternalId"></param>
+ <param name="internalType"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.DocumentManagement.DocumentRepository.Load(systar.isystain.shared.Enumerators.iSystainObjectType,systar.isystain.shared.Common.UnitOfWork,System.Boolean)">
+ <summary>
+ This routine is used to retrieve a list of documents relative to an object in isystain such as an event, transaction, observation, etc.
+ </summary>
+ <param name="internalType"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Common.DocumentManagement.DocumentRepository.Create(systar.isystain.shared.BaseTypes.Common.DocumentManagement.BaseDocument,systar.isystain.shared.Enumerators.DocumentVersionStatus,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This method creates a new document entry in the doc management system.
+ As part of this function, the first doc version is also created
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Commom.BlobRepository">
+ <summary>
+ CRUD class to manage storage and retrieval of blob objects from the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Commom.BlobRepository.ERM(System.Data.DataRow)">
+ <summary>
+ Simple ERM/ORM mapper from a datasetrow
+ </summary>
+ <param name="r"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Compliance.AssessmentInstanceRepository.Search(System.DateTime,System.DateTime,systar.isystain.shared.Entities,System.Guid,System.String,systar.isystain.shared.Enumerators.AssessmentOutcomeStatus,systar.isystain.shared.Enumerators.ComplianceCalendarMode)">
+ <summary>
+ 
+ </summary>
+ <param name="StartDate"></param>
+ <param name="EndDate"></param>
+ <param name="EntityList"></param>
+ <param name="AssessmentId"></param>
+ <param name="UserId"></param>
+ <param name="OutcomeStatus"></param>
+ <param name="Mode"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Compliance.AssessmentInstanceRepository.Search(systar.isystain.shared.Entities,System.Guid,System.Guid,System.String,systar.isystain.shared.Enumerators.AssessmentStatus,systar.isystain.shared.Enumerators.AssessmentOutcomeStatus,System.Boolean)">
+ <summary>
+ This overload is used when the user only has the compliance user role....so that we can load all overdue regardless of date range. This is because there's 
+ no search options for this type of user.
+ </summary>
+ <param name="EntityList"></param>
+ <param name="AssessmentId"></param>
+ <param name="ScheduleId"></param>
+ <param name="UserId"></param>
+ <param name="Status"></param>
+ <param name="OutcomeStatus"></param>
+ <param name="OnlyLatest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Compliance.AssessmentInstanceRepository.LoadSchedule(System.Guid,System.String)">
+ <summary>
+ This method returns all active assessments that involve a specific user
+ </summary>
+ <param name="AssessmentId"></param>
+ <param name="User"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Compliance.ObservationRepository.ObservationItemRepositoryFactory(System.String)">
+ <summary>
+ Observations the item repository factory.
+ </summary>
+ <param name="CompanyId">The company id.</param>
+ <returns></returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Compliance.ObservationRepository.ORM(System.Data.DataRow)">
+ <summary>
+ Object relational mapping for observation
+ </summary>
+ <param name="r">The data row.</param>
+ <returns>Observation</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Compliance.ObservationRepository.Save(systar.isystain.shared.BaseTypes.Compliance.Observation,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This class is only used by the compliance assessment system. Observations are only inserted
+ as they shadow the assessment report. The reportd is needed to maintain the original
+ observer structure which is used by kpi stats etc.
+ </summary>
+ <param name="o"></param>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Compliance.AssessmentRepository.LoadRelatedUsers(System.Collections.Generic.List{systar.isystain.shared.BaseTypes.Compliance.BaseComplianceAssessmentInstance},systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ DS Glenis - Mthod to load people specifically assigned to the assessment (Team) as well as any deployed instances using this assessment template
+ </summary>
+ <param name="AssessmentList"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Compliance.QuestionSubCategoryRepository.Save(systar.isystain.shared.BaseTypes.Compliance.BaseQuestionSubcategory,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to handle CRUD....only insert is implemented currently
+ </summary>
+ <param name="o"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Events.ClassificationTypes.ClassificationType.ClassificationTypeItems.Delete(systar.isystain.dal.Events.ClassificationTypes.ClassificationType.ClassificationTypeItems.ClassificationTypeItem)">
+ <summary>
+ This routine is a controller delete of the classification item class
+ We need a controller delete as we need to resequence all of the items
+ so that we don't end up with sequence gaps. If we do then the resequence 
+ of codes won't work
+ 
+ DAL transaction control is implemented here as this is a logical unit of
+ work to the domain...ie: it would not form part of an outer transaction
+ </summary>
+ <param name="ctiObj"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Events.CodeGroups.SeverityCodeGroup">
+ <summary>
+ Systain incidents assumes every classification code has an inherent 'severity' or consequence to the company.
+ This class encapsulates the specific severity level code group using the more generic CodeGroup() class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Events.CodeGroups.SeverityCodeGroup.Load">
+ <summary>
+ This method shadows the generic classes' Load() method and attempts to load a specific code group
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.Events.EventRepository">
+
+ Repository class to manage iSystain Events. This class should be used for any new work ralated to Events.
+ The older classes are currently used in most of the original Event management pages but this will 
+ gradually be refactored to use the methods in this class.
+
+</member>
+<member name="M:systar.isystain.dal.Events.Kpiset.LoadAverageTimeToBeEntered(System.Xml.XmlDocument,systar.isystain.shared.Entities.Entity,System.DateTime,System.DateTime)">
+ <summary>
+ This method calculates the average number of hours it took for events to be entered from the time they occurred
+ </summary>
+ <param name="Xml"></param>
+ <param name="e"></param>
+ <param name="StartDate"></param>
+ <param name="EndDate"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.kpi.ActivityItemRepository">
+ <summary>
+ DAL driver for Activity ITEM CRUD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.kpi.ActivityExtendedAttributeRepository">
+ <summary>
+ DAL driver for Activity Extended Attributes CRUD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.kpi.ActivityKpiSplitGroupRepository">
+ <summary>
+ DAL driver for Activity Extended Attributes CRUD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.kpi.ActivityKpiSplitGroupItemRepository">
+ <summary>
+ DAL driver for Activity Extended Attributes CRUD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.kpi.ActivityKpiSplitGroupItemPeriodRepository">
+ <summary>
+ DAL driver for Activity Extended Attributes CRUD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.kpi.TransactionRepository.LoadAll(System.Collections.Generic.List{System.Guid},systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ DS Monica DEV5 - Added this method to load all transactions based on a list of transaction Id's. This is used by compliance to load all transactions related to
+ an assessment instance's questions. 
+ </summary>
+ <param name="IdList"></param>
+ <returns></returns>
+</member>
+<member name="M:systar.isystain.dal.kpi.TransactionRepository.Load(System.Collections.Generic.List{System.Guid},systar.isystain.shared.Entities.Entity,System.DateTime,System.DateTime,System.Boolean,System.Boolean,System.String,System.String,systar.isystain.shared.Enumerators.ActivityTransactionStatus,systar.isystain.shared.Entities.Entity)">
+ <summary>
+ DS Jezabel DEV2 - New method to load all transaction for a group of activity templates
+ </summary>
+ <param name="Activities"></param>
+ <param name="Entity"></param>
+ <param name="StartDate"></param>
+ <param name="EndDate"></param>
+ <param name="TransactionDateMode"></param>
+ <param name="AllEntities"></param>
+ <param name="Reference"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.kpi.TransactionRepository.IsProtected(systar.isystain.shared.BaseTypes.kpi.BaseTransaction)">
+ <summary>
+ 
+ </summary>
+ <param name="o"></param>
+ <returns></returns>
+</member>
+<member name="M:systar.isystain.dal.kpi.TransactionDataTagRepository.UsedDataTags(System.Guid,System.Guid,System.Collections.Generic.List{System.String},systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to load all code ID's that have been used as data tags for a given activity item
+ </summary>
+ <param name="ActivityId"></param>
+ <param name="ItemId"></param>
+ <param name="CodeGroups"></param>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.kpi.Initiatives">
+
+ This class handles KPI initiative CRUD
+</member>
+<member name="M:systar.isystain.dal.kpi.QRA.Instance(System.String)">
+ <summary>
+ DS Monica DEV5
+ This method implements the singleton pattern and returns a cached fully loaded object which contains all the KPI monthly QRA data
+ The instance is keyed on company so the returned object will contain only the data related to the company specified by the argument
+ </summary>
+ <param name="CompanyId"></param>
+ <returns></returns>
+</member>
+<member name="T:systar.isystain.dal.kpi.SocialContributionRepository">
+
+ This class handles KPI initiative CRUD
+</member>
+<member name="T:systar.isystain.dal.kpi.SocialInitiativeRepository">
+
+ This class handles KPI initiative CRUD
+</member>
+<member name="M:systar.isystain.dal.kpi.SocialInitiativeRepository.Search(System.DateTime,System.DateTime,systar.isystain.shared.Entities,systar.isystain.shared.Common.UnitOfWork,System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.String,System.Double,System.Boolean)">
+ <summary>
+ This routine finds initiatives based on the filters selected for the social initiatives report
+ </summary>
+ <param name="StartDate"></param>
+ <param name="EndDate"></param>
+ <param name="es"></param>
+ <param name="uow"></param>
+ <param name="Initiatives"></param>
+ <param name="Motivations"></param>
+ <param name="FocusAreas"></param>
+ <param name="Beneficiaries"></param>
+ <param name="ContributionTypes"></param>
+ <param name="OptionalTags"></param>
+ <param name="Ref"></param>
+ <param name="Amount"></param>
+ <param name="NoDocs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.kpi.UnitsOfMeasure.UnitOfMeasure.Conversions">
+
+ CRUD Class for UOM conversions
+</member>
+<member name="M:systar.isystain.dal.ResponsibleSupplyChain.SupplierRankingRepository.LoadSupplierRankingFromAssessment(System.Guid,System.Guid,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This method will extract all supplier rankings based on question responses and load them into a list of supplier ranking records
+ </summary>
+ <param name="SupplierId"></param>
+ <param name="InstanceId"></param>
+ <param name="_uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.ResponsibleSupplyChain.SupplierRankingRepository.ClearCurrentAssessmentRanking(System.Guid,System.Guid,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ This method sets all current records for a given supplier/assessment combination to NOT CURRENT
+ </summary>
+ <param name="SupplierId"></param>
+ <param name="AssessmentId"></param>
+ <param name="uow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyRepository.ActiveFocusAreas">
+ <summary>
+ Gets Active focus areas that are used by competencies.
+ </summary>
+ <returns>List of active focus areas</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyRepository.ActiveStages">
+ <summary>
+ Loads active stages that are used in competencies.
+ </summary>
+ <returns>SystemCompetencyStage</returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyRepository.ActiveGroupings">
+ <summary>
+ Gets Active groupings that are used by competencies.
+ </summary>
+ <returns></returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyRepository.ActiveTypes(System.Boolean)">
+ <summary>
+ Gets Active types that are used by competencies.
+ DEV SM - 2015/4/28 - Added order by clause as per ticket (BC) - https://basecamp.com/2048331/projects/8009678/todos/171585186
+ DEV SM - 2015/4/29 - Changed order to by title
+ </summary>
+ <returns></returns>
+ <exception cref="T:System.Exception"></exception>
+</member>
+<member name="T:systar.isystain.dal.Competencies.CompetencyStageRepository">
+
+ This class manages a collection of competency stages
+ The class implements a simple repository pattern with a very simple entity relational mapper
+
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyStageRepository.Save(systar.isystain.shared.BaseTypes.Competencies.CompetencyStage,systar.isystain.shared.Common.UnitOfWork)">
+
+ This method determines what CRUD action is to be taken on ref_competency_dependency
+
+</member>
+<member name="T:systar.isystain.dal.Competencies.CompetencyDependencyRepository">
+
+ This class manages a collection of competencies that the parent is dependent on
+
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyDependencyRepository.Save(systar.isystain.shared.BaseTypes.Competencies.CompetencyDependency,systar.isystain.shared.Common.UnitOfWork)">
+
+ This method determines what CRUD action is to be taken on ref_competency_dependency
+
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyFocusAreaRepository.Save(systar.isystain.shared.BaseTypes.Competencies.CompetencyFocusArea,systar.isystain.shared.Common.UnitOfWork)">
+
+ This method determines what CRUD action is to be taken on ref_competency_dependency
+
+</member>
+<member name="M:systar.isystain.dal.Competencies.CompetencyStatusModelRepository.Save(systar.isystain.shared.BaseTypes.Competencies.CompetencyStatusModel,systar.isystain.shared.Common.UnitOfWork)">
+
+ As this class is 
+</member>
+<member name="M:systar.isystain.dal.Competencies.Training.TrainingCourseRepository.SupplierRepositoryFactory(System.String)">
+ Child repository factory routines
+</member>
+<member name="M:systar.isystain.dal.Competencies.Training.TrainingCourseRepository.Save(systar.isystain.shared.BaseTypes.Competencies.Training.TrainingCourse,systar.isystain.shared.Common.UnitOfWork)">
+
+ As this class is 
+</member>
+<member name="M:systar.isystain.dal.Competencies.Training.Indicators.Init(systar.isystain.shared.Common.UnitOfWork)">
+
+ This routine generates the required kpi category and kpiset for managing health kpi indicators
+
+</member>
+<member name="M:systar.isystain.dal.Competencies.PersonCompetencyRepository.LoadUsersCommencingCompetency(System.Guid,System.Guid,System.Boolean,System.Guid,System.Boolean)">
+ <summary>
+ Method to return a list of people who have commenced a competency but have not yet been issued the competency
+ </summary>
+ <param name="FocusAreaId"></param>
+ <param name="CompetencyId"></param>
+ <param name="Distinct"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Competencies.PersonCompetencyStageRepository.LoadAll">
+
+ this method loads all user competency stage records into an indexed hashtable.
+ This is then useful for large collections of user competencies where the status of each
+ needs to be know.
+ This should be used in all reporting
+
+</member>
+<member name="M:systar.isystain.dal.Health.Indicators.Init">
+
+ This routine generates the required kpi category and kpiset for managing health kpi indicators
+
+</member>
+<member name="M:systar.isystain.dal.Health.Interactions.LoadAll(System.String,systar.isystain.shared.Common.UnitOfWork)">
+ <summary>
+ Method to return all interaction records for a specified management plan
+ </summary>
+ <param name="PlanId"></param>
+ <param name="uow"></param>
+ <returns></returns>
+</member>
+<member name="T:systar.isystain.dal.PartyRepository">
+
+ This class implements the repository pattern to manage the CRUD for collections or instances of the
+ generic party object (POCO).
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.ERM(System.Data.DataRow,System.Boolean)">
+ Basic Entity Relational mapper
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.LoadPeopleInPosition(System.Guid,System.Boolean)">
+ <summary>
+ Method to return a list of people who are currently in a position within the organisation
+ </summary>
+ <param name="PositionId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.LoadAll(System.String)">
+ <summary>
+ This routine should only be called by login.aspx to handle login requests prior to the user's company being known
+ </summary>
+ <param name="PartyId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.Login(System.String,System.String)">
+ <summary>
+ This method is called from the iSystain login page. It assumes the company has not yet been determined
+ so it triess to find the first user with the user ID and password combination.
+ </summary>
+ <param name="PartyId"></param>
+ <param name="Password"></param>
+ <returns>A deep loaded party record with all roles and role entities loaded</returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.Delete(systar.isystain.shared.BaseTypes.Common.Party)">
+
+ The delete method only disabled the user. We can't delete users as we need to maintain historical record
+ data integrity
+
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.PartyRolesRepository.Load">
+
+ Method to load all roles assigned to a specific party
+
+</member>
+<member name="T:systar.isystain.dal.PartyRepository.PartyRoleEntitiesRepository">
+
+ Role Entities Repository
+
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.PartyRoleEntitiesRepository.Load(System.Guid)">
+
+ Method to load all role entities assigned to a specific party
+
+</member>
+<member name="T:systar.isystain.dal.PartyRepository.PartyRoleKpiSetsRepository">
+
+ Role Entities Repository
+
+</member>
+<member name="M:systar.isystain.dal.PartyRepository.PartyRoleKpiSetsRepository.Load(System.Guid)">
+
+ Method to load all role entities assigned to a specific party
+
+</member>
+<member name="T:systar.isystain.dal.UserSettings.Preferences">
+
+ This class manages the CRUD of isystain user preferences
+</member>
+<member name="T:systar.isystain.dal.InstrumentResults">
+ <summary>
+ This is the DAL component of the Business Object: assure.InstrumentResults. It's purpose is to retrieve
+ results for up to 5 audit instruments for a given list of sites and date range
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.InstrumentResults.Load(System.Collections.ArrayList,System.String,systar.isystain.shared.Constants.EntityType,System.DateTime,System.DateTime)">
+ <summary>
+ Method to retieve instrument results from the database 
+ </summary>
+ <param name="Instruments">An arraylist of instument IDs in listitem format...passed from the UI</param>
+ <param name="EntityList">an sql formatted string of sites</param>
+ <param name="EntityType">An integer that defines the type of entities eg: 5 = site</param>
+ <param name="StartDate"></param>
+ <param name="EndDate"></param>
+ <returns>True if at least 1 row is returned</returns>
+ <remarks>Method to retieve the audit results for up to 5 instruments for specified list of entities</remarks>
+</member>
+<member name="T:systar.isystain.dal.SectionResults">
+ <summary>
+ This is the DAL component of the Business Object: assure.InstrumentResults. It's purpose is to retrieve
+ results for up to 5 audit instruments for a given list of sites and date range
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.SectionResults.Load(System.Guid,System.String,systar.isystain.shared.Constants.EntityType,System.DateTime,System.DateTime)">
+ <summary>
+ Method to retieve instrument results from the database 
+ </summary>
+ <param name="InstrumentID">A GUID identifying the instrument selected for this report</param>
+ <param name="EntityList">an sql formatted string of sites</param>
+ <param name="EntityType">An integer that defines the type of entities eg: 5 = site</param>
+ <param name="StartDate"></param>
+ <param name="EndDate"></param>
+ <returns>True if at least 1 row is returned</returns>
+ <remarks>Method to retieve the audit results for up to 5 instruments for specified list of entities</remarks>
+</member>
+<member name="T:systar.isystain.dal.Core.CodeGroups.SeverityCodeGroup">
+ <summary>
+ Systain incidents assumes every classification code has an inherent 'severity' or consequence to the company.
+ This class encapsulates the specific severity level code group using the more generic CodeGroup() class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Core.CodeGroups.SeverityCodeGroup.Load">
+ <summary>
+ This method shadows the generic classes' Load() method and attempts to load a specific code group
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.ImportServices.ImportQueue.Load">
+ <summary>
+ CRUD routine to load a persisted copy of this queue's definition
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.ImportServices.ImportJob.Load(System.Guid)">
+ <summary>
+ CRUD routine to load a registered job from the dal
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationRoles">
+ <summary>
+ Class to cover methods and attributes relation to organisation role
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationRoles.OrganisationRole">
+ <summary>
+ Instance of a single role
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationStructure">
+ <summary>
+ Class to cover methods and attributes relation to the entire org structure
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationStructure.OrganisationEntities">
+ <summary>
+ A collection class for maintaining a list of org entities
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationStructure.OrganisationEntities.OrganisationEntity">
+ <summary>
+ A specific instance of a generic orig entity
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationStructure.OrganisationEntities.EntityLocationAssociations">
+ <summary>
+ Class to manage the generic association of an entity to many locations (of a single type)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationStructure.OrganisationEntities.EntityLocationAssociations.EntityLocationAssociation">
+ <summary>
+ This class manages storing, deleting and updating a link between an entity and a location
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationStructure.OrganisationEntities.Site">
+ <summary>
+ A specific implmentation of a site based on the generic org entity class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.OrganisationStructure.OrganisationEntities.Site.Places">
+ <summary>
+ Class to manage a collection of places for a site.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.Users.Statistics">
+ <summary>
+ This routine is used to build an array of user statistics for accounting purposes
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:systar.isystain.dal.User.IsUnique(System.String)">
+ <summary>
+ This routine checks if the supplied userid is unique across all companies
+ </summary>
+ <param name="UserId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:systar.isystain.dal.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:systar.isystain.dal.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:systar.isystain.dal.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

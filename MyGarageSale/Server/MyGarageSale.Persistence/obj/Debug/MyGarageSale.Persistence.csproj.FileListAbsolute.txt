@@ -1,0 +1,31 @@
+D:\GitHub\MyGarageSale\MyGarageSale.Persistence\obj\Debug\MyGarageSale.Persistence.csprojResolveAssemblyReference.cache
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Persistence.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Persistence.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Shared.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLite-net.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLitePCLRaw.core.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Shared.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLite-net.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\obj\Debug\MyGarageSale.Persistence.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\obj\Debug\MyGarageSale.Persistence.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Persistence\obj\Debug\MyGarageSale.Persistence.csprojResolveAssemblyReference.cache
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Persistence.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Persistence.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Shared.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLite-net.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLitePCLRaw.core.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\MyGarageSale.Shared.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\bin\Debug\SQLite-net.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\obj\Debug\MyGarageSale.Persistence.csprojResolveAssemblyReference.cache
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\obj\Debug\MyGarageSale.Persistence.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Persistence\obj\Debug\MyGarageSale.Persistence.pdb

@@ -1,0 +1,20 @@
+D:\GitHub\MyGarageSale\MyGarageSale.Server.Shared\bin\Debug\MyGarageSale.Server.Shared.dll
+D:\GitHub\MyGarageSale\MyGarageSale.Server.Shared\bin\Debug\MyGarageSale.Server.Shared.pdb
+D:\GitHub\MyGarageSale\MyGarageSale.Server.Shared\bin\Debug\log4net.dll
+D:\GitHub\MyGarageSale\MyGarageSale.Server.Shared\bin\Debug\log4net.xml
+D:\GitHub\MyGarageSale\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.csprojResolveAssemblyReference.cache
+D:\GitHub\MyGarageSale\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.dll
+D:\GitHub\MyGarageSale\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\MyGarageSale.Server.Shared.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\MyGarageSale.Server.Shared.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\log4net.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\log4net.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\MyGarageSale.Server.Shared.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\MyGarageSale.Server.Shared.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\log4net.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Server.Shared\bin\Debug\log4net.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.csprojResolveAssemblyReference.cache
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Server.Shared\obj\Debug\MyGarageSale.Server.Shared.pdb

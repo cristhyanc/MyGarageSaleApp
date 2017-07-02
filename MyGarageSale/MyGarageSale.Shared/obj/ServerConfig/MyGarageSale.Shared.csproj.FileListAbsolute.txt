@@ -1,0 +1,16 @@
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\MyGarageSale.Shared.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\MyGarageSale.Shared.pdb
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\Newtonsoft.Json.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\PCLStorage.Abstractions.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\PCLStorage.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\SQLite-net.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\SQLitePCLRaw.batteries_green.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\SQLitePCLRaw.batteries_v2.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\SQLitePCLRaw.core.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\Newtonsoft.Json.xml
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\PCLStorage.xml
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\PCLStorage.Abstractions.xml
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\bin\ServerConfig\SQLite-net.xml
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\obj\ServerConfig\MyGarageSale.Shared.csprojResolveAssemblyReference.cache
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\obj\ServerConfig\MyGarageSale.Shared.dll
+D:\MyGarageSale\MyGarageSale\MyGarageSale.Shared\obj\ServerConfig\MyGarageSale.Shared.pdb

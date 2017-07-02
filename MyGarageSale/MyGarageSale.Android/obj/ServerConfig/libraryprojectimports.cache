@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\PCLStorage\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\Plugin.Connectivity\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\PCLStorage\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\ServerConfig\__library_projects__\PCLStorage\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\ServerConfig\__library_projects__\Plugin.Connectivity\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\ServerConfig\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\ServerConfig\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\ServerConfig\__library_projects__\PCLStorage\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\PCLStorage.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\MyGarageSale\MyGarageSale\MyGarageSale.Android\obj\ServerConfig\__library_projects__\PCLStorage.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

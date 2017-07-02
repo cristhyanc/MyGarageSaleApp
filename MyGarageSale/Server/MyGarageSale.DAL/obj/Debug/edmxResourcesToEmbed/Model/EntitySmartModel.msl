@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBSmartEducationAgencyModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tblAudits">
+      <EntityTypeMapping TypeName="DBSmartEducationAgencyModel.tblAudit">
+        <MappingFragment StoreEntitySet="tblAudit">
+          <ScalarProperty Name="TableIdValue" ColumnName="TableIdValue" />
+          <ScalarProperty Name="ChangedColumns" ColumnName="ChangedColumns" />
+          <ScalarProperty Name="NewData" ColumnName="NewData" />
+          <ScalarProperty Name="OldData" ColumnName="OldData" />
+          <ScalarProperty Name="Actions" ColumnName="Actions" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="RevisionStamp" ColumnName="RevisionStamp" />
+          <ScalarProperty Name="AuditId" ColumnName="AuditId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItems">
+      <EntityTypeMapping TypeName="DBSmartEducationAgencyModel.tblItem">
+        <MappingFragment StoreEntitySet="tblItem">
+          <ScalarProperty Name="IdGarageSale" ColumnName="IdGarageSale" />
+          <ScalarProperty Name="urlImage" ColumnName="urlImage" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IdItem" ColumnName="IdItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGarageSales">
+      <EntityTypeMapping TypeName="DBSmartEducationAgencyModel.tblGarageSale">
+        <MappingFragment StoreEntitySet="tblGarageSale">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="UrlImage" ColumnName="UrlImage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IdGarageSale" ColumnName="IdGarageSale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

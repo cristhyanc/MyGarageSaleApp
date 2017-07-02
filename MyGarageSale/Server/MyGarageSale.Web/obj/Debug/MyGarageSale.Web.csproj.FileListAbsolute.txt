@@ -1,0 +1,233 @@
+D:\GitHub\MyGarageSale\MyGarageSale.Web\obj\Debug\MyGarageSale.Web.csprojResolveAssemblyReference.cache
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\obj\Debug\MyGarageSale.Web.csprojResolveAssemblyReference.cache
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\ApplicationInsights.config
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\csc.exe
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\vbc.exe
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\VBCSCompiler.exe
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Web.dll.config
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Web.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Web.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Antlr3.Runtime.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.SqlServer.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\log4net.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.Web.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.ApplicationInsights.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Services.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Shared.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Newtonsoft.Json.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Owin.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Net.Http.Formatting.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Helpers.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.Owin.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.WebHost.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Mvc.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Optimization.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Razor.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Deployment.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Razor.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\WebGrease.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.DataRepositories.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Server.Shared.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\SQLite-net.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Persistence.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\SQLitePCLRaw.core.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\SQLitePCLRaw.batteries_v2.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Services.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\log4net.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.Web.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.ApplicationInsights.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.ServiceLocation.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Shared.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Net.Http.Formatting.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.Owin.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.WebHost.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Helpers.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Mvc.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Optimization.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Razor.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Deployment.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Razor.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Antlr3.Runtime.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Newtonsoft.Json.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.SqlServer.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.DataRepositories.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.DataRepositories.dll.config
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Server.Shared.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\SQLite-net.xml
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Persistence.pdb
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\obj\Debug\MyGarageSale.Web.dll
+D:\MyGarageSale\MyGarageSale\Server\MyGarageSale.Web\obj\Debug\MyGarageSale.Web.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\ApplicationInsights.config
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\csc.exe
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\vbc.exe
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\VBCSCompiler.exe
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Web.dll.config
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Web.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Web.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Antlr3.Runtime.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.SqlServer.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\log4net.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.Web.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.ApplicationInsights.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Server.Shared.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Services.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Shared.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Newtonsoft.Json.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Owin.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Net.Http.Formatting.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Helpers.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.Owin.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.WebHost.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Mvc.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Optimization.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Razor.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Deployment.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Razor.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\WebGrease.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\SQLite-net.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.DataRepositories.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\SQLitePCLRaw.core.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\SQLitePCLRaw.batteries_v2.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Persistence.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Shared.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Services.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Server.Shared.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\log4net.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.Web.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.ApplicationInsights.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.ServiceLocation.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Net.Http.Formatting.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.Owin.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Http.WebHost.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Helpers.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Mvc.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Optimization.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.Razor.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Deployment.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\System.Web.WebPages.Razor.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Antlr3.Runtime.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Newtonsoft.Json.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\EntityFramework.SqlServer.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\SQLite-net.xml
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.DataRepositories.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.DataRepositories.dll.config
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\bin\MyGarageSale.Persistence.pdb
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\obj\Debug\MyGarageSale.Web.csprojResolveAssemblyReference.cache
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\obj\Debug\MyGarageSale.Web.dll
+D:\MyGarageSale - Copy (2)\MyGarageSale\Server\MyGarageSale.Web\obj\Debug\MyGarageSale.Web.pdb

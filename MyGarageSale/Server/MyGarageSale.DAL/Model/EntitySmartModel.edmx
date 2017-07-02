@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBSmartEducationAgencyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblAudit">
+          <Key>
+            <PropertyRef Name="AuditId" />
+          </Key>
+          <Property Name="AuditId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RevisionStamp" Type="datetime" Nullable="false" />
+          <Property Name="TableName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="130" Nullable="false" />
+          <Property Name="Actions" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="OldData" Type="xml" />
+          <Property Name="NewData" Type="xml" />
+          <Property Name="ChangedColumns" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TableIdValue" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="tblGarageSale">
+          <Key>
+            <PropertyRef Name="IdGarageSale" />
+          </Key>
+          <Property Name="IdGarageSale" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="UrlImage" Type="nvarchar" MaxLength="250" />
+          <Property Name="IdUser" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblItem">
+          <Key>
+            <PropertyRef Name="IdItem" />
+          </Key>
+          <Property Name="IdItem" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="urlImage" Type="varchar" MaxLength="50" />
+          <Property Name="IdGarageSale" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tblItem_tblGarageSale">
+          <End Role="tblGarageSale" Type="Self.tblGarageSale" Multiplicity="1" />
+          <End Role="tblItem" Type="Self.tblItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblGarageSale">
+              <PropertyRef Name="IdGarageSale" />
+            </Principal>
+            <Dependent Role="tblItem">
+              <PropertyRef Name="IdGarageSale" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBSmartEducationAgencyModelStoreContainer">
+          <EntitySet Name="tblAudit" EntityType="Self.tblAudit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblGarageSale" EntityType="Self.tblGarageSale" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblItem" EntityType="Self.tblItem" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tblItem_tblGarageSale" Association="Self.FK_tblItem_tblGarageSale">
+            <End Role="tblGarageSale" EntitySet="tblGarageSale" />
+            <End Role="tblItem" EntitySet="tblItem" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBSmartEducationAgencyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblAudits" EntityType="DBSmartEducationAgencyModel.tblAudit" />
+          <EntitySet Name="tblItems" EntityType="DBSmartEducationAgencyModel.tblItem" />
+          <EntitySet Name="tblGarageSales" EntityType="DBSmartEducationAgencyModel.tblGarageSale" />
+          <AssociationSet Name="FK_tblItem_tblGarageSale" Association="DBSmartEducationAgencyModel.FK_tblItem_tblGarageSale">
+            <End Role="tblGarageSale" EntitySet="tblGarageSales" />
+            <End Role="tblItem" EntitySet="tblItems" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tblAudit">
+          <Key>
+            <PropertyRef Name="AuditId" />
+          </Key>
+          <Property Name="AuditId" Type="Guid" Nullable="false" />
+          <Property Name="RevisionStamp" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="TableName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserId" Type="String" MaxLength="130" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Actions" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OldData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NewData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ChangedColumns" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="TableIdValue" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblItem">
+          <Key>
+            <PropertyRef Name="IdItem" />
+            <PropertyRef Name="Title" />
+            <PropertyRef Name="Description" />
+            <PropertyRef Name="CreateDate" />
+          </Key>
+          <Property Name="IdItem" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="urlImage" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IdGarageSale" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="tblGarageSale" Relationship="DBSmartEducationAgencyModel.FK_tblItem_tblGarageSale" FromRole="tblItem" ToRole="tblGarageSale" />
+        </EntityType>
+        <EntityType Name="tblGarageSale">
+          <Key>
+            <PropertyRef Name="IdGarageSale" />
+          </Key>
+          <Property Name="IdGarageSale" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrlImage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="IdUser" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblItems" Relationship="DBSmartEducationAgencyModel.FK_tblItem_tblGarageSale" FromRole="tblGarageSale" ToRole="tblItem" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tblItem_tblGarageSale">
+          <End Type="DBSmartEducationAgencyModel.tblGarageSale" Role="tblGarageSale" Multiplicity="1" />
+          <End Type="DBSmartEducationAgencyModel.tblItem" Role="tblItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblGarageSale">
+              <PropertyRef Name="IdGarageSale" />
+            </Principal>
+            <Dependent Role="tblItem">
+              <PropertyRef Name="IdGarageSale" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBSmartEducationAgencyModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="tblAudits">
+            <EntityTypeMapping TypeName="DBSmartEducationAgencyModel.tblAudit">
+              <MappingFragment StoreEntitySet="tblAudit">
+                <ScalarProperty Name="TableIdValue" ColumnName="TableIdValue" />
+                <ScalarProperty Name="ChangedColumns" ColumnName="ChangedColumns" />
+                <ScalarProperty Name="NewData" ColumnName="NewData" />
+                <ScalarProperty Name="OldData" ColumnName="OldData" />
+                <ScalarProperty Name="Actions" ColumnName="Actions" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="RevisionStamp" ColumnName="RevisionStamp" />
+                <ScalarProperty Name="AuditId" ColumnName="AuditId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblItems">
+            <EntityTypeMapping TypeName="DBSmartEducationAgencyModel.tblItem">
+              <MappingFragment StoreEntitySet="tblItem">
+                <ScalarProperty Name="IdGarageSale" ColumnName="IdGarageSale" />
+                <ScalarProperty Name="urlImage" ColumnName="urlImage" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="IdItem" ColumnName="IdItem" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblGarageSales">
+            <EntityTypeMapping TypeName="DBSmartEducationAgencyModel.tblGarageSale">
+              <MappingFragment StoreEntitySet="tblGarageSale">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+                <ScalarProperty Name="UrlImage" ColumnName="UrlImage" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="IdGarageSale" ColumnName="IdGarageSale" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

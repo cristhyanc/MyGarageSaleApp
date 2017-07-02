@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              BackgroundColor="{StaticResource MainColor}" 
+             x:Class="MyGarageSale.Views.LoginPage">
+    
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand"  BackgroundColor="{StaticResource LoginPageColor}"  VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid  BackgroundColor="{StaticResource MainColor}"   Grid.RowSpan="3"
+               HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label  VerticalTextAlignment="Center"
+                                     HorizontalTextAlignment="Center" 
+                    Text="Log In" TextColor="White" Font="Bold,25" Margin="0,0,0,10"  />
+
+                <Image    Grid.Row="1"   Source="LoginHouse.png" >
+                </Image>
+            </Grid>
+
+
+            <Grid    Grid.Row="3" Grid.RowSpan="5" 
+               HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Padding="20,10,20,0">
+                    <Label   HorizontalTextAlignment="Center" 
+                    Text="Login with Social Account" TextColor="White" Font="Bold,15" Margin="0,0,0,10"  />
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                        <Button Image="FacebookIcon.png" 
+                            BorderColor="Transparent" BackgroundColor="Transparent"  TextColor="Transparent"></Button>
+                        <Button Image="GoogleIcon.png"
+                            BorderColor="Transparent" BackgroundColor="Transparent" TextColor="Transparent"></Button>
+                    </StackLayout>
+
+
+                    <Entry Placeholder="UserName" Text="{Binding UserName, Mode=TwoWay }"  BackgroundColor="White"   HorizontalTextAlignment="Center" ></Entry>
+                    <Entry Placeholder="Password" Text="{Binding Password, Mode=TwoWay }" BackgroundColor="White"  IsPassword="True"  HorizontalTextAlignment="Center" ></Entry>
+                    <Button Text="Log In" HorizontalOptions="Fill" Style="{StaticResource ButtonStyle}" 
+                        Command="{Binding BtnLoginCommand}" ></Button>
+
+                    <Label   HorizontalTextAlignment="Center"   Style="{StaticResource TextLightStyle15}" 
+                    Text="Don't have an account."  Margin="0,10,0,10"  />
+
+                </StackLayout>
+
+
+            </Grid>
+
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

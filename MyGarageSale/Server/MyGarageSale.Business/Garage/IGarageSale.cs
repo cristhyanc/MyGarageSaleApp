@@ -16,9 +16,9 @@ namespace MyGarageSale.Services.Garage
 
         bool Update(GarageSaleTO garageSale);
 
-        IList<GarageSaleTO> GetAll();
+        List<GarageSaleTO> GetAll();
 
-        IList<GarageSaleTO> GetByUserID(string userId);
+        List<GarageSaleTO> GetByUserID(string userId);
 
         GarageSaleTO GetGarageyByID(Guid id);
     }

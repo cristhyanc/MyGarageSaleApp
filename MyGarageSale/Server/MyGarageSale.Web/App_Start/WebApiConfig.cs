@@ -15,9 +15,9 @@ namespace MyGarageSale.Web
         public static void Register(HttpConfiguration config)
         {
 
-            var container = new UnityContainer();
-            container.RegisterType<IGarageSale, GarageSale>(new HierarchicalLifetimeManager());
-            config.DependencyResolver = new UnityResolver(container);
+            //var container = new UnityContainer();
+            //container.RegisterType<IGarageSale, GarageSale>(new HierarchicalLifetimeManager());
+            //config.DependencyResolver = new UnityResolver(container);
 
             // Web API configuration and services
             // Configure Web API to use only bearer token authentication.
@@ -28,10 +28,12 @@ namespace MyGarageSale.Web
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "GarageSale",
+                name: "GarageSaleApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+           
         }
     }
 }

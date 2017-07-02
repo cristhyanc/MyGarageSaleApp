@@ -74,7 +74,7 @@ namespace MyGarageSale.DataRepositories
             return true;
         }
 
-        public virtual IList<T> GetAll(params Expression<Func<T, object>>[] navigationProperties)
+        public virtual List<T> GetAll(params Expression<Func<T, object>>[] navigationProperties)
         {
             List<T> list;
             using (var context = new GarageSaleDataContext(this.userID))
@@ -92,7 +92,7 @@ namespace MyGarageSale.DataRepositories
             return list;
         }
 
-        public virtual IList<T> GetList(Func<T, bool> where,
+        public virtual List<T> GetList(Func<T, bool> where,
              params Expression<Func<T, object>>[] navigationProperties)
         {
             List<T> list;

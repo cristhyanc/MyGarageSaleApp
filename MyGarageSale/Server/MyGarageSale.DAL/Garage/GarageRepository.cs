@@ -100,7 +100,7 @@ namespace MyGarageSale.DataRepositories.Garage
             }
         }
 
-        public IList<GarageSaleTO> GetAll()
+        public List<GarageSaleTO> GetAll()
         {
             try
             {
@@ -115,7 +115,7 @@ namespace MyGarageSale.DataRepositories.Garage
             }
         }
 
-        public IList<GarageSaleTO> GetByUserID(string userId)
+        public List<GarageSaleTO> GetByUserID(string userId)
         {
             try
             {

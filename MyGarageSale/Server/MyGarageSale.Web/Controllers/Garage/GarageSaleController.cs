@@ -1,79 +1,109 @@
 ﻿using MyGarageSale.Services.Garage;
 using MyGarageSale.Shared.DTO;
+using MyGarageSale.Web.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web;
-using System.Web.Http;
 using System.Web.Mvc;
 
 namespace MyGarageSale.Web.Controllers.Garage
 {
-
-    public class GarageSaleController: ApiController
+    public class GarageSaleController : Controller
     {
+
+
         private IGarageSale _repository;
 
-        public GarageSaleController(IGarageSale repository)
+        public GarageSaleController()
         {
-            _repository = repository;
+            _repository = (IGarageSale)System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver.GetService(typeof(IGarageSale));
         }
 
-
-        [System.Web.Mvc.HttpGet]
-        public IEnumerable<GarageSaleTO> GetAll()
-
-        {
-            IList<GarageSaleTO> result = null;
-            result = _repository.GetAll();
-            if (result!=null)
-            {
-                return result.ToArray();
-            }
+        //public GarageSaleController()
+        //{
            
-            return null;
+        //}
 
+        // GET: GarageSale
+        public ActionResult Index()
+        {
+            GarageSaleViewModel viewModel = new GarageSaleViewModel();           
+            viewModel.GarageSales = _repository.GetAll();           
+
+            return View(viewModel);
         }
 
-        [System.Web.Mvc.HttpGet]
-        public GarageSaleTO GetGarageyByID(Guid garageId)
+        // GET: GarageSale/Details/5
+        public ActionResult Details(int id)
         {
-            GarageSaleTO result = null;
-            result = _repository.GetGarageyByID(garageId);            
-            return result;
+            return View();
         }
 
-        [System.Web.Mvc.HttpGet]
-        public IEnumerable<GarageSaleTO> GetGarageSalesByUser(string user)
+        // GET: GarageSale/Create
+        public ActionResult Create()
         {
-            IList<GarageSaleTO> result = null;
-            result = _repository.GetByUserID(user);
-            return result;
+            return View();
         }
 
-        [System.Web.Mvc.HttpPut]
-        public HttpResponseMessage PutGarageSale(Guid id, GarageSaleTO garageSale)
+        // POST: GarageSale/Create
+        [HttpPost]
+        public ActionResult Create(FormCollection collection)
         {
-            garageSale.GarageSaleID = id;           
-            //    throw new HttpResponseException(HttpStatusCode);           
-
-            var response = Request.CreateResponse<GarageSaleTO>(System.Net.HttpStatusCode.OK, garageSale);
-            return response;
-        }
-
-        [System.Web.Mvc.HttpPost]
-        public HttpResponseMessage Post(GarageSaleTO garageSale)
-        {
-            HttpResponseMessage response = Request.CreateResponse<GarageSaleTO>(System.Net.HttpStatusCode.NotAcceptable, garageSale);
-            if (_repository.Add(garageSale))
+            try
             {
-                response = Request.CreateResponse<GarageSaleTO>(System.Net.HttpStatusCode.Created, garageSale);
-            }          
+                // TODO: Add insert logic here
 
-            return response;
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
         }
 
+        // GET: GarageSale/Edit/5
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        // POST: GarageSale/Edit/5
+        [HttpPost]
+        public ActionResult Edit(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add update logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: GarageSale/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: GarageSale/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }

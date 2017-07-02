@@ -66,9 +66,9 @@ namespace MyGarageSale.Services.Garage
             }
         }
 
-        public IList<GarageSaleTO> GetAll()
+        public List<GarageSaleTO> GetAll()
         {
-            IList<GarageSaleTO> result = new List<GarageSaleTO>();
+            List<GarageSaleTO> result = new List<GarageSaleTO>();
             try
             {
                 IGarageRepository repo = new GarageRepository(this.UserId);
@@ -81,9 +81,9 @@ namespace MyGarageSale.Services.Garage
             return result;
         }
 
-        public IList<GarageSaleTO> GetByUserID(string userId)
+        public List<GarageSaleTO> GetByUserID(string userId)
         {
-            IList<GarageSaleTO> result = new List<GarageSaleTO>();
+            List<GarageSaleTO> result = new List<GarageSaleTO>();
             try
             {
                 IGarageRepository repo = new GarageRepository(this.UserId);

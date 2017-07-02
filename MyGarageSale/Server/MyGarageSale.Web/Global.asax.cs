@@ -1,4 +1,6 @@
-﻿using MyGarageSale.Shared;
+﻿using Microsoft.Practices.Unity;
+using MyGarageSale.Services.Garage;
+using MyGarageSale.Shared;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,6 +24,13 @@ namespace MyGarageSale.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            var container = new UnityContainer();
+            container.RegisterType<IGarageSale, GarageSale>(new HierarchicalLifetimeManager());
+            container.RegisterInstance<IGarageSale>(new GarageSale());
+            // container.RegisterType<IGarageSale, GarageSale>(new HierarchicalLifetimeManager());
+            GlobalConfiguration.Configuration.DependencyResolver = new UnityResolver(container);
+
         }
 
         private const  string currentSessionData= "currentSessionData";

@@ -1,8 +1,10 @@
 ﻿using MyGarageSale.Services.Garage;
 using MyGarageSale.Shared.DTO;
+using MyGarageSale.Web.Models;
 using MyGarageSale.Web.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -43,18 +45,25 @@ namespace MyGarageSale.Web.Controllers.Garage
         // GET: GarageSale/Create
         public ActionResult Create()
         {
-            return View();
+            var viewModel = new CreateGarageSaleViewModel();
+            return View(viewModel);
         }
 
         // POST: GarageSale/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(CreateGarageSaleViewModel model)
         {
             try
             {
-                // TODO: Add insert logic here
+                if (model.archivo != null)
+                {
+                    string serverpath = Server.MapPath("~") + ConfigurationManager.AppSettings["urlImages"].ToString();
+                    model.GarageSale.UrlImage   = DateTime.Now.ToString("yyyyMMdd") + "_" + model.GarageSale.Owner.UserID  + "." + model.archivo.ContentType.Split('/')[1].ToString();
+                    model.archivo.SaveAs(serverpath +"/" + model.GarageSale.UrlImage );
+                }
 
-                return RedirectToAction("Index");
+                return View(model);
+                // return RedirectToAction("Index");
             }
             catch
             {

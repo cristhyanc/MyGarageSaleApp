@@ -13,7 +13,7 @@ namespace MyGarageSale.Persistence.Configuration
         public tblAuditConfiguration()
         {
             HasKey(e => e.AuditId);
-            Property(e => e.AuditId).HasColumnName("UserID").HasColumnType("uniqueidentifier");
+            Property(e => e.AuditId).HasColumnName("AuditId").HasColumnType("uniqueidentifier");
             Property(e => e.TableName).HasColumnName("TableName").HasColumnType("nvarchar").HasMaxLength(50);
             Property(e => e.UserId).HasColumnName("UserId").HasColumnType("nvarchar").HasMaxLength(130);
             Property(e => e.RevisionStamp).HasColumnName("RevisionStamp").HasColumnType("Date");

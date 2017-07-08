@@ -4,14 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My Garage Sale</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <script src="~/Scripts/angular.min.js"></script>
-    @*<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>*@
-    <script src="~/Modules/Branch/branchModule.js"></script>
-    <script src="~/Modules/Branch/branchServices.js"></script>
-    <script src="~/Modules/CustomException.js"></script>
-    <script src="~/Scripts/angular-route.js"></script>
+    @Styles.Render("~/Content/css")  
+    @RenderSection("styles", required: false)
 </head>
 <body >
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -34,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="container body-content" ng-app="branchModule">
+    <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
@@ -44,6 +38,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/mainScript")
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -85,7 +85,7 @@ namespace MyGarageSale.Web.Controllers
             //    case SignInStatus.Success:
             var user = new General();
             user.UserId = "cristhyan";           
-            MvcApplication.SessionData = user;
+            //MvcApplication.SessionData = user;
             return RedirectToAction("Index", "Branch");
             //return RedirectToLocal(returnUrl);
             //    case SignInStatus.LockedOut:

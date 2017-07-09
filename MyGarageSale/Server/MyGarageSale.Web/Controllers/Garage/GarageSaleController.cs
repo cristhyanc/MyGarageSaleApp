@@ -8,30 +8,30 @@ using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using MyGarageSale.Server.Shared;
 namespace MyGarageSale.Web.Controllers.Garage
 {
-    public class GarageSaleController : Controller
+    public class GarageSaleController : BaseController
     {
 
-
-        private IGarageSale _repository;
+        log4net.ILog logger = log4net.LogManager.GetLogger(typeof(BaseController));
+        private IGarageSale _service;
 
         public GarageSaleController()
         {
-            _repository = (IGarageSale)System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver.GetService(typeof(IGarageSale));
+            _service = (IGarageSale)System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver.GetService(typeof(IGarageSale));
         }
 
-        //public GarageSaleController()
-        //{
-           
-        //}
+        public GarageSaleController(IGarageSale service)
+        {
+            _service = service;
+        }
 
         // GET: GarageSale
         public ActionResult Index()
         {
-            GarageSaleViewModel viewModel = new GarageSaleViewModel();           
-            viewModel.GarageSales = _repository.GetAll();           
+            GarageSaleViewModel viewModel = new GarageSaleViewModel();
+            viewModel.GarageSales = _service.GetAll();
 
             return View(viewModel);
         }
@@ -57,18 +57,37 @@ namespace MyGarageSale.Web.Controllers.Garage
             {
                 if (model.archivo != null)
                 {
-                    string serverpath = Server.MapPath("~") + ConfigurationManager.AppSettings["urlImages"].ToString();
-                    model.GarageSale.UrlImage   = DateTime.Now.ToString("yyyyMMdd") + "_" + model.GarageSale.Owner.UserID  + "." + model.archivo.ContentType.Split('/')[1].ToString();
-                    model.archivo.SaveAs(serverpath +"/" + model.GarageSale.UrlImage );
+                    string serverpath = Server.MapPath("~") ;
+
+                    if (!System.IO.Directory.Exists(serverpath + "/" + model.GarageSale.User.UserID))
+                    {
+                        System.IO.Directory.CreateDirectory(serverpath + "/" + model.GarageSale.User.UserID);
+                    }
+
+                    model.GarageSale.UrlImage   = ConfigurationManager.AppSettings["urlImages"].ToString() + "/" + model.GarageSale.User.UserID  + "/" + Guid.NewGuid().ToString()  +"." + model.archivo.ContentType.Split('/')[1].ToString();
+                    serverpath = serverpath + "/" + model.GarageSale.UrlImage;
+                    model.archivo.SaveAs(serverpath);
                 }
 
-                return View(model);
-                // return RedirectToAction("Index");
+
+               if ( _service.Add(model.GarageSale))
+                {
+                    this.Success("saved!");
+                }
+                else
+                {
+                    this.Attention("Could not being saved");
+                }
+                
+                
             }
-            catch
+            catch(Exception ex)
             {
-                return View();
+                logger.Error(ex.Message);
+               // LogErrorHelper.ErrorLog(ex);
+                this.Error("Opps, there is a problem");
             }
+            return View(model);
         }
 
         // GET: GarageSale/Edit/5

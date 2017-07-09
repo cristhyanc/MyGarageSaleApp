@@ -26,12 +26,13 @@ namespace MyGarageSale.Services.Garage
 
         }
 
-        public bool Add(GarageSaleTO newBranch)
+        public bool Add(GarageSaleTO newgarage)
         {           
             try
             {
                 IGarageRepository repo = new GarageRepository(this.UserId);
-                return repo.Add(newBranch);
+                newgarage.Status = Constants.Status.Active;
+                return repo.Add(newgarage);
             }
             catch (Exception ex)
             {
@@ -40,12 +41,12 @@ namespace MyGarageSale.Services.Garage
             
         }
 
-        public bool Delete(Guid branchId)
+        public bool Delete(Guid garageId)
         {
             try
             {
                 IGarageRepository repo = new GarageRepository(this.UserId);
-                return repo.Delete(branchId);
+                return repo.Delete(garageId);
             }
             catch (Exception ex)
             {
@@ -53,12 +54,12 @@ namespace MyGarageSale.Services.Garage
             }
         }
 
-        public bool Update(GarageSaleTO branch)
+        public bool Update(GarageSaleTO garage)
         {
             try
             {
                 IGarageRepository repo = new GarageRepository(this.UserId);
-                return repo.Update(branch);
+                return repo.Update(garage);
             }
             catch (Exception ex)
             {

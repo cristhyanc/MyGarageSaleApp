@@ -13,9 +13,10 @@ namespace MyGarageSale.Web.ViewModel
         public CreateGarageSaleViewModel()
         {
             GarageSale = new Shared.DTO.GarageSaleTO();
-            GarageSale.Owner = new Shared.DTO.UserTO();
-            GarageSale.Owner.UserID = "dddd";
-            GarageSale.UserID = "cristhyuan";
+            GarageSale.EventDate = DateTime.Now.AddDays(10);
+            GarageSale.User = new Shared.DTO.UserTO();
+            GarageSale.User = MvcApplication.SessionData.User;
+            GarageSale.UserID = GarageSale.User.UserID;
 
         }
     }

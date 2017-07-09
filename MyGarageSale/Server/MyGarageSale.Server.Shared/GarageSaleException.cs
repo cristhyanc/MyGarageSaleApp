@@ -33,11 +33,14 @@ namespace MyGarageSale.Server.Shared
         {
             if (inner.GetType() != typeof(GarageSaleException))
             {
-                MethodBase site = inner.TargetSite;
-                string methodName = site.Name;
-                string dllName = site.DeclaringType.ToString();
-                log4net.ILog logger = log4net.LogManager.GetLogger(site.DeclaringType);
-                logger.Error("An error has occurred, Method: " + methodName + ", DLL: " + dllName + ". Error:" + inner.Message, inner);
+
+                LogErrorHelper.ErrorLog(inner);
+
+                //MethodBase site = inner.TargetSite;
+                //string methodName = site.Name;
+                //string dllName = site.DeclaringType.ToString();
+                //log4net.ILog logger = log4net.LogManager.GetLogger(site.DeclaringType);
+                //logger.Error("An error has occurred, Method: " + methodName + ", DLL: " + dllName + ". Error:" + inner.Message, inner);
             }
         }
 

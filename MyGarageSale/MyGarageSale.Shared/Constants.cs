@@ -40,8 +40,10 @@ namespace MyGarageSale.Shared
             Updated = 1,
             Deleted = 2
         }
+       
         public enum Status
         {
+            None=0,
             Active = 1,
             Disable = 2,
         }
@@ -78,6 +80,8 @@ namespace MyGarageSale.Shared
 
     public class General
     {
+
+        public UserTO  User { get; set; }
 
         public General(string userId)
         {
@@ -218,6 +222,20 @@ namespace MyGarageSale.Shared
 
 
     }
+
+    public static class Alerts
+    {
+        public const string SUCCESS = "success";
+        public const string ATTENTION = "attention";
+        public const string ERROR = "error";
+        public const string INFORMATION = "info";
+
+        public static string[] ALL
+        {
+            get { return new[] { SUCCESS, ATTENTION, INFORMATION, ERROR }; }
+        }
+    }
+
 }
 
 

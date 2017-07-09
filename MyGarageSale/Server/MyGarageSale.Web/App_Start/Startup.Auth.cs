@@ -7,7 +7,7 @@ using Microsoft.Owin.Security.Google;
 using Owin;
 using MyGarageSale.Web.Models;
 
-[assembly: log4net.Config.XmlConfigurator(ConfigFile = "Web.config", Watch = true)]
+//[assembly: log4net.Config.XmlConfigurator(ConfigFile = "Web.config", Watch = true)]
 namespace MyGarageSale.Web
 {
     

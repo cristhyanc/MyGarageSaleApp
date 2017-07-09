@@ -30,7 +30,10 @@ namespace MyGarageSale.DataRepositories.Garage
                     for (int i = 0; i < items.Length; i++)
                     { 
                         items[i].GarageSaleID = Guid.NewGuid();
+
+                        Context.Users.Attach(items[i].User);
                     }
+
                     base.Add(items);
 
                 }

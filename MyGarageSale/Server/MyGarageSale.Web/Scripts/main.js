@@ -1,6 +1,6 @@
 ﻿
 
-window.imagenVacia = '/Images/find_user.png';
+//window.imagenVacia = '/Images/find_user.png';
 window.mostrarVistaPrevia = function mostrarVistaPrevia() {
 
     var Archivos,
@@ -30,7 +30,7 @@ window.mostrarVistaPrevia = function mostrarVistaPrevia() {
             //sino muestra un mensaje 
             if (tipo !== 'image/jpeg' && tipo !== 'image/png' && tipo !== 'image/gif') {
                 jQuery('#vistaPrevia').attr('src', window.imagenVacia);
-                alert('El formato de imagen no es válido: debe seleccionar una imagen JPG, PNG o GIF.');
+                alert('Invalid format: you need to select one of this: JPG, PNG o GIF.');
             } else {
                 jQuery('#vistaPrevia').attr('src', origen.result);
             }
@@ -192,3 +192,8 @@ function HideModalpopUp() {
 
 }
 
+$(function () {
+    $.validator.methods.date = function (value, element) {
+        return this.optional(element) || moment(value, "DD.MM.YYYY", true).isValid();
+    }
+});

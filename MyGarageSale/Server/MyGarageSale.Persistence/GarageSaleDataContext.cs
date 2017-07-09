@@ -13,7 +13,7 @@ namespace MyGarageSale.Persistence
 {
     public class GarageSaleDataContext : DbContext
     {
-       // readonly log4net.ILog logger = log4net.LogManager.GetLogger(typeof(GarageSaleDataContext));
+        readonly log4net.ILog logger = log4net.LogManager.GetLogger(typeof(GarageSaleDataContext));
         private AuditTrailFactory auditFactory;
         private List<tblAudit> auditList = new List<tblAudit>();
         private List<DbEntityEntry> list = new List<DbEntityEntry>();
@@ -27,24 +27,28 @@ namespace MyGarageSale.Persistence
            : base("name=MyGarageSaleEntities")
         { 
             this.UserId = userId;
+
+    //        Database.SetInitializer<GarageSaleDataContext>(
+    //new DropCreateDatabaseAlways<GarageSaleDataContext>());
         }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //   // Database.SetInitializer<GarageSaleDataContext>(null);
+        //    base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Configurations.Add(new GarageSaleConfiguration());
-            modelBuilder.Configurations.Add(new UserConfiguration());
-            modelBuilder.Configurations.Add(new tblAuditConfiguration());
-            //modelBuilder.Configurations.Add(new IncomeCategoryConfiguration());
-            //modelBuilder.Configurations.Add(new ExpenseConfiguration());
-            //modelBuilder.Configurations.Add(new ExpenseCategoryConfiguration());
-            //modelBuilder.Configurations.Add(new PaymentMethodConfiguration());
-        }
+        //    modelBuilder.Configurations.Add(new GarageSaleConfiguration());
+        //    modelBuilder.Configurations.Add(new UserConfiguration());
+        //    modelBuilder.Configurations.Add(new tblAuditConfiguration());
+        //    //modelBuilder.Configurations.Add(new IncomeCategoryConfiguration());
+        //    //modelBuilder.Configurations.Add(new ExpenseConfiguration());
+        //    //modelBuilder.Configurations.Add(new ExpenseCategoryConfiguration());
+        //    //modelBuilder.Configurations.Add(new PaymentMethodConfiguration());
+        //}
 
         public virtual IDbSet<GarageSaleTO> GarageSales { get; set; }
         public virtual IDbSet<tblAudit> tblAudits { get; set; }
-
+        public virtual IDbSet<UserTO> Users { get; set; }
 
         public override int SaveChanges()
         {
@@ -81,18 +85,18 @@ namespace MyGarageSale.Persistence
             }
             catch (DbEntityValidationException e)
             {
-                //this.logger.Error("SaveChanges", e);
+                this.logger.Error("SaveChanges", e);
                 string strEr = "";
                 foreach (var eve in e.EntityValidationErrors)
                 {
                     strEr = "Entity of type \"{0}\" in state \"{1}\" has the following validation errors:";
                     strEr = string.Format(strEr, eve.Entry.Entity.GetType().Name, eve.Entry.State);
-                   // this.logger.Error(strEr);
+                    this.logger.Error(strEr);
                     foreach (var ve in eve.ValidationErrors)
                     {
                         strEr = "- Property: \"{0}\", Error: \"{1}\"";
                         strEr = string.Format(strEr, ve.PropertyName, ve.ErrorMessage);
-                        //this.logger.Error(strEr);
+                        this.logger.Error(strEr);
                     }
                 }
 

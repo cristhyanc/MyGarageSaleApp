@@ -23,7 +23,7 @@ namespace MyGarageSale.Persistence.Configuration
             Property(e => e.UserID).HasColumnName("UserID");
             Property(e => e.Address).HasColumnName("Address");
 
-            HasRequired(e => e.Owner).WithMany().HasForeignKey(e => e.UserID);
+            HasRequired(e => e.User).WithMany().HasForeignKey(e => e.UserID).WillCascadeOnDelete(false);
 
             ToTable("tblGarageSale");
         }
